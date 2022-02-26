@@ -1,0 +1,44 @@
+.header {
+    height: 8rem;
+
+    background-color: @colors[primary];
+    padding: 0 2.8rem;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 100%;
+        max-width: @grid-width;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 3.6rem;
+        font-weight: 700;
+
+        color: @colors[text-white];
+    }
+
+    &__navigation {
+        list-style: none;
+
+        display: flex;
+        align-items: center;
+
+        li:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+    }
+
+    &__navigation-item {
+        &:link, &:visited {
+            font-size: 2rem;
+            font-weight: 500;
+
+            color: @colors[text-white];
+            text-decoration: none;
+        }
+    }
+}
