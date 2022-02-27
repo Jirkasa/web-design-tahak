@@ -66,6 +66,13 @@ body {
   line-height: 2rem;
   color: #2e2f30;
 }
+.list {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #2e2f30;
+  list-style-position: inside;
+  padding-left: 1.2rem;
+}
 .u-mb-base-1 {
   margin-bottom: 0.4rem !important;
 }
@@ -175,12 +182,18 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.8rem 1.2rem;
+  transition: all 0.1s;
 }
 .navigation__item:hover,
 .navigation__item--active:link,
 .navigation__item--active:visited {
   background-color: #e01fad;
   color: #fff;
+}
+.fluid-image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .article-page {
   max-width: 116.8rem;
