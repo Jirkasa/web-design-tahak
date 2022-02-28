@@ -73,6 +73,14 @@ body {
   list-style-position: inside;
   padding-left: 1.2rem;
 }
+.link:link,
+.link:visited {
+  color: #e01fad;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
 .u-mb-base-1 {
   margin-bottom: 0.4rem !important;
 }
