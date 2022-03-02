@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes maximum-scale=2.2 minimum-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Web Design Tahák</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__content">
+                <h2 class="header__title">Web Design Tahák</h2>
+                <ul class="header__navigation">
+                    <li><a href="#" class="header__navigation-item">Hlavní Stránka</a></li>
+                    <li><a href="#" class="header__navigation-item">Části Taháku</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="article-page">
+            <nav class="article-page__side-bar">
+                <h2 class="navigation-heading">Části Taháku</h2>
+                <ul class="navigation">
+                    <li><a href="../inspirace-a-zdroje/" class="navigation__item">Inspirace a zdroje</a></li>
+                    <li><a href="../vyvoj-produktu/" class="navigation__item">Vývoj produktu</a></li>
+                    <li><a href="../sketching/" class="navigation__item">Sketching</a></li>
+                    <li><a href="../user-flows-a-sitemap/" class="navigation__item">User Flows a Sitemap</a></li>
+                    <li><a href="../wireframing/" class="navigation__item">Wireframing</a></li>
+                    <li><a href="../grid/" class="navigation__item navigation__item--active">Grid</a></li>
+                </ul>
+            </nav>
+            <main class="article-page__content">
+                <h1 class="heading-primary u-mb-base-4">Grid</h1>
+                <p class="paragraph u-mb-base-4">Webové stránky se navrhují podle gridu (mřížky). Grid nám při návrhu webové stránky pomáhá na stránce rovnoměrně uspořádat obsah.</p>
+                <h2 class="heading-secondary u-mb-base-2">Základní jednotka</h2>
+                <p class="paragraph u-mb-base-2">Předtím než vůbec začneme s návrhem designu webových stránek, tak si musíme určit, jaká bude naše základní jednotka. Všechny rozměry našich UI elementů a mezery mezi nimi by měli být inkrementem této základní jednotky. Základní jednotka dělá náš design konzistentním a snižuje počet rozhodnutí, která musíme jako designéři při volbě rozměrů udělat.</p>
+                <p class="paragraph u-mb-base-2">Jakou si určíme základní jednotku je na nás. Já například používám jako základní jednotku 8 pixelů a na nějaké věci si ji ještě rozpůlím a používám 4 pixely.</p>
+                <img src="../assets/img/BaseUnits.svg" alt="základní jednotka" class="fluid-image u-mb-base-3">
+                <p class="paragraph u-mb-base-3">Následující ukázka ukazuje UI, které pro rozměry používá základní jednotku, a UI, které ji nepoužívá. Možná to na vás teď může působit jako bezvýznamný rozdíl, ale pokud bych vám ukázal nějaký reálnější příklad, tak byste možná uznali, že to jestli základní jednotku používáme nebo ne může mít na náš design velký vliv.</p>
+                <img src="../assets/img/BaseUnitComparison.svg" alt="porovnání UI se základní jednotkou a bez základní jednotky" class="fluid-image u-mb-base-4">
+                <h2 class="heading-secondary u-mb-base-2">Rozmisťování obsahu podle gridu</h2>
+                <p class="paragraph u-mb-base-2">Jednotlivé prvky rozmisťujeme po webových stránkách pomocí gridu. Většinou používáme dva typy gridů: sloupcový a baseline. Pro některé typy designů si ale můžeme klidně vytvořit i jiné.</p>
+                <h3 class="heading-tertiary u-mb-base-1">Sloupcový grid</h3>
+                <p class="paragraph u-mb-base-3">Základní grid, který při návrhu webových stránek používáme, je sloupcový grid. Ukazuje jej následující obrázek. Většinou se používá 12 sloupců, protože tak řádky můžeme jednoduše rozdělit na poloviny, třetiny, čtvrtiny nebo třeba šestiny.</p>
+                <img src="../assets/img/ColumnGrid.svg" alt="sloupcový grid" class="fluid-image u-mb-base-3">
+                <p class="paragraph u-mb-base-3">Velikost našeho sloupcového gridu můžeme omezit na nějakou šířku, nebo jej nechat přes celou šířku okna prohlížeče bez ohledu na jeho velikost. Gridu, který se stále roztahuje přes celou velikost okna se říká Fluid Grid a gridu, který nemění svou velikost se říká Fixed Grid.</p>
+                <img src="../assets/img/ColumnGridTypes.svg" alt="Fixed Grid a Fluid Grid" class="fluid-image u-mb-base-3">
+                <p class="paragraph u-mb-base-3">Elementy, které na webovou stránku podle gridu umisťujeme, by měli začínat a končit sloupcem. Neměli by začínat nebo končit mezerou mezi sloupci. Následující obrázek ukazuje špatné a správné rozmístění elementů podle gridu.</p>
+                <img src="../assets/img/PlacementOfElementsOnGrid.svg" alt="špatné a správné rozmístění elementů na stránce podle gridu" class="fluid-image u-mb-base-4">
+                <h3 class="heading-tertiary u-mb-base-1">Baseline grid</h3>
+                <p class="paragraph u-mb-base-2">Dalším typem gridu, který při návrhu webových stránek používáme, je baseline grid. Tento grid nám poskytuje vedení pro typografii a UI elementy. Baseline Grid se skládá z obdelníků umístěných pod sebou po celé výšce stránky. Já jejich výšku nastavuji na polovinu mé základní jednotky. Pokud tedy jako základní jednotku používám 8 pixelů, tak jim nastavím výšku 4 pixely.</p>
+                <p class="paragraph u-mb-base-3">Pokud má jeden obdelník baseline gridu výšku 4 pixely, tak musíme velikost a výšku řádku našeho textu nastavovat v inkrementech této hodnoty, aby se nám text do gridu přesně vešel.</p>
+                <img src="../assets/img/BaselineGrid.svg" alt="baseline grid" class="fluid-image">
+            </main>
+        </div>
+        <footer class="footer">Copyright &copy; by Jiří Satora</footer>
+    </div>
+</body>
+</html>
