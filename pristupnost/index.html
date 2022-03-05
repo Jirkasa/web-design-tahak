@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes maximum-scale=2.2 minimum-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Web Design Tahák</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__content">
+                <h2 class="header__title">Web Design Tahák</h2>
+                <ul class="header__navigation">
+                    <li><a href="#" class="header__navigation-item">Hlavní Stránka</a></li>
+                    <li><a href="#" class="header__navigation-item">Části Taháku</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="article-page">
+            <nav class="article-page__side-bar">
+                <h2 class="navigation-heading">Části Taháku</h2>
+                <ul class="navigation">
+                    <li><a href="../inspirace-a-zdroje/" class="navigation__item">Inspirace a zdroje</a></li>
+                    <li><a href="../vyvoj-produktu/" class="navigation__item">Vývoj produktu</a></li>
+                    <li><a href="../sketching/" class="navigation__item">Sketching</a></li>
+                    <li><a href="../user-flows-a-sitemap/" class="navigation__item">User Flows a Sitemap</a></li>
+                    <li><a href="../wireframing/" class="navigation__item">Wireframing</a></li>
+                    <li><a href="../grid/" class="navigation__item">Grid</a></li>
+                    <li><a href="../typografie/" class="navigation__item">Typografie</a></li>
+                    <li><a href="../barvy/" class="navigation__item">Barvy</a></li>
+                    <li><a href="../formulare/" class="navigation__item">Formuláře</a></li>
+                    <li><a href="../pristupnost/" class="navigation__item navigation__item--active">Přístupnost</a></li>
+                </ul>
+            </nav>
+            <main class="article-page__content">
+                <h1 class="heading-primary u-mb-base-4">Přístupnost</h1>
+                <p class="paragraph u-mb-base-4">Když navrhujeme webové stránky, většinou se soustředíme jen na uživatele, kteří nemají žádné zdravotní postižení. To je ale špatně, měli bychom myslet na všechny uživatele. Neměli bychom zapomínat na to, že například i slepí lidé si procházejí webové stránky a používají na to čtečky obrazovky a tak podobně.</p>
+                <h2 class="heading-secondary u-mb-base-2">Asistenční technologie</h2>
+                <p class="paragraph u-mb-base-2">Zde jsem vypsal pár technologií, které používají pro interakci s našimi webovými stránkami lidé se zrakovým postižením.</p>
+                <h3 class="heading-tertiary u-mb-base-1">Čtečky obrazovky</h3>
+                <p class="paragraph u-mb-base-2">Pokud si chtějí slepí lidé procházet webové stránky, pomocí zraku to samozřejmě dělat nemohou. Ke čtení webových stránek tedy mohou použít čtečky obrazovky. O to aby byla webová stránka pro čtečky obrazovky více optimalizovaná se mohou postarat programátoři, ale jako designéři s tím nic moc nezmůžeme.</p>
+                <h3 class="heading-tertiary u-mb-base-1">Braillovy terminály</h3>
+                <p class="paragraph u-mb-base-2">Další způsob jak mohou slepí uživatelé naše webové stránky číst, je použití braillova terminálu. Jedná se o zařízení, které umí převádět klasický text na braillovo písmo a uživatel si jej tedy může pomocí hmatu přečíst. Některé braillovy terminály umožňují také mnohem víc, zde se můžete podívat na <a href="https://www.youtube.com/watch?v=SlxIEPEC_Qc" target="_blank" class="link">video</a>.</p>
+                <img src="../assets/img/BrailleTerminal.jpg" alt="braillův terminál" class="fluid-image u-mb-base-3">
+                <h3 class="heading-tertiary u-mb-base-1">Software pro zvětšování obrazovky</h3>
+                <p class="paragraph u-mb-base-2">Uživatelé, kteří hodně špatně vidí, mohou používat software pro zvětšování obrazovky. Není to jako kdybychom použili přibližování v prohlížeči, ale uživatel si může zvětšit část obrazovky, kterou zrovna potřebuje. Posiluje to fakt, že všechny elementy našeho designu by měli být škálovatelné.</p>
+                <h2 class="heading-secondary u-mb-base-2">Co dělat pro zvýšení přístupnosti</h2>
+                <p class="paragraph u-mb-base-2">Zvýšit přístupnost webových stránek pro uživatele se zdravotním postižením mohou hlavně programátoři. Jako designéři se ale můžeme postarat o to, abychom měli správný kontrast mezi barvami, a tak podobně.</p>
+                <h3 class="heading-tertiary u-mb-base-1">Kontrast mezi barvami</h3>
+                <p class="paragraph u-mb-base-2">Měli bychom se postarat o to, aby byl mezi barvou textu a jeho pozadím dostatečný kontrast. Ke zjištění jestli máme dobrý kontrast můžeme použít <a href="https://colorable.jxnblk.com/" class="link">tento webový nástroj</a>. Ve všech případech ale nemusí fungovat úplně správně, takže jej vždy neberte úplně vážně. Pokud používate Figmu, tak také existuje <a href="https://www.figma.com/community/plugin/748533339900865323/Contrast" target="_blank" class="link">tento plugin</a>, který můžete pro zkontrolování kontrastu použít přímo ve Figmě.</p>
+                <h3 class="heading-tertiary u-mb-base-1">Stylování focus stavu</h3>
+                <p class="paragraph u-mb-base-2">Na stylování focus stavu inputů a tlačítek bychom neměli zapomínat. Pokud nebudeme focus stav stylovat vůbec a odstraníme defaultní outline, která se při focusnutí elementu zobrazí, tak bude navigace na naší stránce přes klávesnici v podstatě nepoužitelná, protože uživatel nebude vědět, který element má zrovna vybraný. Ve většině případů stačí focus stav nastavit na stejný styl jako při najetí myši na element.</p>
+                <h3 class="heading-tertiary u-mb-base-1">Popisování tlačítek s ikonami</h3>
+                <p class="paragraph">Pokud na našich webových stránkách máme tlačítka, která neobsahují text, ale jen ikonu, tak bychom měli zajistit, aby slepí uživatelé věděli k čemu tato tlačítka slouží. To jako designéři zajistit nemůžeme, ale můžeme o tom říct programátorům, kteří to udělají v HTML kódu.</p>
+            </main>
+        </div>
+        <footer class="footer">Copyright &copy; by Jiří Satora</footer>
+    </div>
+</body>
+</html>
