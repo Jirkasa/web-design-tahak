@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes maximum-scale=2.2 minimum-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <title>Web Design Tahák</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__content">
+                <h2 class="header__title">Web Design Tahák</h2>
+                <ul class="header__navigation">
+                    <li><a href="#" class="header__navigation-item">Hlavní Stránka</a></li>
+                    <li><a href="#" class="header__navigation-item">Části Taháku</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="article-page">
+            <nav class="article-page__side-bar">
+                <h2 class="navigation-heading">Části Taháku</h2>
+                <ul class="navigation">
+                    <li><a href="../inspirace-a-zdroje/" class="navigation__item">Inspirace a zdroje</a></li>
+                    <li><a href="../vyvoj-produktu/" class="navigation__item">Vývoj produktu</a></li>
+                    <li><a href="../sketching/" class="navigation__item">Sketching</a></li>
+                    <li><a href="../user-flows-a-sitemap/" class="navigation__item">User Flows a Sitemap</a></li>
+                    <li><a href="../wireframing/" class="navigation__item">Wireframing</a></li>
+                    <li><a href="../grid/" class="navigation__item">Grid</a></li>
+                    <li><a href="../typografie/" class="navigation__item">Typografie</a></li>
+                    <li><a href="../barvy/" class="navigation__item">Barvy</a></li>
+                    <li><a href="../formulare/" class="navigation__item">Formuláře</a></li>
+                    <li><a href="../pristupnost/" class="navigation__item">Přístupnost</a></li>
+                    <li><a href="../navrhove-vzory/" class="navigation__item">Návrhové vzory</a></li>
+                    <li><a href="../pohyb-a-mikrointerakce/" class="navigation__item navigation__item--active">Pohyb a mikrointerakce</a></li>
+                </ul>
+            </nav>
+            <main class="article-page__content">
+                <h1 class="heading-primary u-mb-base-4">Pohyb a mikrointerakce</h1>
+                <p class="paragraph u-mb-base-4">Tato část je zaměřena na pohyb a mikrointerakce. Přidáním pohybu a mikrointerakcí můžeme naše webové stránky nebo aplikaci trochu oživit.</p>
+                <h2 class="heading-secondary u-mb-base-2">Pohyb</h2>
+                <p class="paragraph u-mb-base-2">Přidáním pohybu můžeme občas zlepšit uživatelský zážitek z navštívení našich webových stránek nebo aplikace. Můžeme například vytvořit přechod z jedné stránky na druhou (pokud děláme single page aplikace), přidat animaci při zobrazení obrázku po kliknutí na něj, a tak dále. Měli bychom ale být s pohybem opatrní a nepřidávat jej úplně všude. Tím bychom uživatelský zážitek z používání webových stránek nebo aplikace spíš zhoršili. Pohyb by neměl být příliš rozptylující.</p>
+                <p class="paragraph u-mb-base-4">Pohyb je obzvlášť dobrý pro prevenci dezorientace uživatelů. V následují ukázce pohyb uživateli pomáhá nezapomenout, kterou kartu měl otevřenou naposled.</p>
+                <div id="motion-demo" class="motion-demo u-mb-base-4">
+                    <div class="motion-demo__card">
+                        <img src="../assets/img/motion-demo/AlgoritmyADatoveStrukturyVJS.png" alt="projekt Algoritmy a Datové Struktury v JS" class="motion-demo__card-image">
+                        <div class="motion-demo__card-title">Algoritmy a Datové Struktury v JS</div>
+                        <button class="motion-demo__card-close-button"><svg>
+                                <use xlink:href="../assets/img/icon-sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                        <a href="https://jirkasa.github.io/algoritmy-a-datove-struktury-v-js/" target="_blank" class="motion-demo__card-link">navštívit</a>
+                    </div>
+                    <div class="motion-demo__card">
+                        <img src="../assets/img/motion-demo/NavrhoveVzoryVJS.png" alt="projekt Návrhové vzory v JS" class="motion-demo__card-image">
+                        <div class="motion-demo__card-title">Návrhové vzory v JS</div>
+                        <button class="motion-demo__card-close-button">
+                            <svg>
+                                <use xlink:href="../assets/img/icon-sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                        <a href="https://jirkasa.github.io/navrhove-vzory-v-js/" target="_blank" class="motion-demo__card-link">navštívit</a>
+                    </div>
+                    <div class="motion-demo__card">
+                        <img src="../assets/img/motion-demo/AlbumImageFinder.png" alt="projekt Album Image Finder" class="motion-demo__card-image">
+                        <div class="motion-demo__card-title">Album Image Finder</div>
+                        <button class="motion-demo__card-close-button">
+                            <svg>
+                                <use xlink:href="../assets/img/icon-sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                        <a href="https://album-image-finder.herokuapp.com/" target="_blank" class="motion-demo__card-link">navštívit</a>
+                    </div>
+                    <div class="motion-demo__card">
+                        <img src="../assets/img/motion-demo/MySQLTahak.png" alt="projekt MySQL tahák" class="motion-demo__card-image">
+                        <div class="motion-demo__card-title">MySQL Tahák</div>
+                        <button class="motion-demo__card-close-button">
+                            <svg>
+                                <use xlink:href="../assets/img/icon-sprite.svg#icon-cross"></use>
+                            </svg>
+                        </button>
+                        <a href="https://jirkasa.github.io/mysql-tahak/" target="_blank" class="motion-demo__card-link">navštívit</a>
+                    </div>
+                </div>
+                <p class="paragraph u-mb-base-4">Hodně designérů nechává přidání pohybu až na konec. To už ale občas nejde aniž by bylo nutné nějaké věci předělat. Proto bychom na něj měli začít myslet dříve při našem návrhu. Návrh pohybu je ale také často časově náročný, takže si musíme ujasnit, jestli nám to za to vůbec stojí. U webových stránek jej často ani moc nepotřebujeme, možná spíš u webových aplikací.</p>
+                <h2 class="heading-secondary u-mb-base-2">Mikrointerakce</h2>
+                <p class="paragraph u-mb-base-2">Mikrointerakce jsou takové menší animace, které se spustí, když uživatel provede nějakou akci. Jako ukázku jsem tu přidal tlačítko, na které když kliknete, tak se spustí animace nahrávání.</p>
+                <div id="microinteraction-demo" class="microinteraction-demo u-mb-base-3"><span class="microinteraction-demo__text">nahrát</span><span class="microinteraction-demo__progress-number">0%</span></div>
+                <h3 class="heading-tertiary u-mb-base-1">Struktura mikrointerakcí</h3>
+                <p class="paragraph u-mb-base-1">I když mikrointerakce představují v podstatě jen menší animace, mají strukturu. Při spuštění mikrointerakce probíhají tyto kroky:</p>
+                <ol class="list u-mb-base-2">
+                    <li><b>Trigger: </b>uživatel provede nějakou akci</li>
+                    <li><b>Rules: </b>určí se co se má stát (něco se má vyplnit, něco schovat, atp.) - uživatel to nevidí, jsou to jen pravidla</li>
+                    <li><b>Feedback: </b>uživateli se zobrazuje něco, co jej informuje o tom, že mikrointerakce probíhá</li>
+                    <li><b>Loops + Modes: </b>některé mikrointerakce se různě mění nebo opakují, například podle toho, jak akci uživatel provádí</li>
+                </ol>
+                <h3 class="heading-tertiary u-mb-base-1">Proč jsou mikrointerakce důležité</h3>
+                <p class="paragraph">Mikrointerakce nám mohou připadat jako malé detaily. Tyto detaily ale mohou mít velký vliv. Díky mikrointerakcím může být používání našich webových stránek nebo aplikace o něco zábavnější. Také díky nim uživatel získá více zpětné vazby když provede nějakou akci a pomáhají předcházet chybám. Mikrointerakce můžeme použít třeba i pro validaci v registračním formuláři. Než abychom čekali až uživatel formulář odešle, tak mu již v průběhu jeho vyplňování můžeme kontrolovat jestli zadává správné údaje a informovat jej o tom.</p>
+            </main>
+        </div>
+        <footer class="footer">Copyright &copy; by Jiří Satora</footer>
+    </div>
+
+    <script src="../assets/js/motion-demo.js"></script>
+    <script src="../assets/js/microinteraction-demo.js"></script>
+</body>
+</html>
