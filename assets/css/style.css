@@ -85,6 +85,10 @@ body {
   color: #e01fad;
   text-decoration: none;
 }
+.link--dark:link,
+.link--dark:visited {
+  color: #2e2f30;
+}
 .link:hover {
   text-decoration: underline;
 }
