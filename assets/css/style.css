@@ -40,6 +40,13 @@ body {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/inter/v8/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Rowdies';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rowdies/v13/ptRJTieMYPNBAK21zrc.ttf) format('truetype');
+}
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -115,8 +122,10 @@ body {
   margin: 0 auto;
 }
 .header__title {
+  font-family: 'Rowdies', cursive;
   font-size: 3.6rem;
-  font-weight: 700;
+  line-height: 3.6rem;
+  font-weight: 400;
   color: #fff;
 }
 .header__navigation {
@@ -183,6 +192,10 @@ body {
 }
 .navigation {
   list-style: none;
+  position: sticky;
+  top: 0.8rem;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .navigation li:not(:last-child) {
   margin-bottom: 0.8rem;
@@ -537,4 +550,10 @@ body {
 .article-page__content {
   grid-column: 4 / span 8;
   padding: 2.8rem 0;
+}
+.article-page__side-illustration {
+  grid-column: 12 / span 1;
+  background-image: url("../../assets/img/SideIllustration.svg");
+  background-position: 50% 0;
+  background-repeat: repeat-y;
 }
