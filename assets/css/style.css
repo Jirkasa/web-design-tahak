@@ -14,6 +14,13 @@ body {
   background-color: #e5e5e5;
 }
 @font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredokaone/v12/k3kUo8kEI-tA1RRcTZGmTmHB.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -40,13 +47,6 @@ body {
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/inter/v8/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Rowdies';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rowdies/v13/ptRJTieMYPNBAK21zrc.ttf) format('truetype');
 }
 body {
   font-family: 'Inter', sans-serif;
@@ -138,7 +138,7 @@ body {
   margin: 0 auto;
 }
 .header__title {
-  font-family: 'Rowdies', cursive;
+  font-family: 'Fredoka One', cursive;
   font-size: 3.6rem;
   line-height: 3.6rem;
   font-weight: 400;
@@ -155,9 +155,25 @@ body {
 .header__navigation-item:link,
 .header__navigation-item:visited {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   text-decoration: none;
+  position: relative;
+}
+.header__navigation-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.2rem;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease-out;
+}
+.header__navigation-item:hover::before {
+  transform: scaleX(1);
 }
 .footer {
   font-size: 1.2rem;
