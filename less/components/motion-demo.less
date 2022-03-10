@@ -1,7 +1,7 @@
 .motion-demo {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
-    column-gap: 3.2rem;
+    gap: 3.2rem;
 
     &__card {
         grid-column-end: span 2;
@@ -18,6 +18,10 @@
         // overflow: hidden;
 
         cursor: pointer;
+
+        @media (max-width: #pxToEm(540)[]) {
+            grid-column-end: span 4;
+        }
 
         &--opened {
             cursor: unset;
