@@ -14,13 +14,6 @@ body {
   background-color: #e5e5e5;
 }
 @font-face {
-  font-family: 'Fredoka One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/fredokaone/v12/k3kUo8kEI-tA1RRcTZGmTmHB.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -138,10 +131,9 @@ body {
   margin: 0 auto;
 }
 .header__title {
-  font-family: 'Fredoka One', cursive;
   font-size: 3.6rem;
   line-height: 3.6rem;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
 }
 .header__navigation {
