@@ -7,6 +7,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
@@ -104,8 +105,22 @@ body {
 .u-mb-base-4 {
   margin-bottom: 1.6rem !important;
 }
+.u-mb-base-7 {
+  margin-bottom: 2.8rem !important;
+}
 .u-mr-base-3 {
   margin-right: 1.2rem !important;
+}
+.u-center-text {
+  text-align: center !important;
+}
+.u-light-text {
+  color: #596063 !important;
+}
+.u-intro-text {
+  max-width: 96.8rem !important;
+  margin: 0 auto;
+  text-align: center;
 }
 .page {
   margin: 0 auto;
@@ -163,7 +178,7 @@ body {
   padding: 0.8rem 1.6rem;
   outline: none;
   transition: all 0.1s;
-  color: #fff;
+  color: #2e2f30;
   background-color: #ade01f;
   text-decoration: none;
   border-radius: 4.4rem;
@@ -180,10 +195,15 @@ body {
   display: inline-flex;
   align-items: center;
 }
+.button-primary--large:link,
+.button-primary--large:visited {
+  font-size: 2.4rem;
+  padding: 1.2rem 2.4rem;
+}
 .button-primary svg {
   width: 1.6rem;
   height: 1.6rem;
-  fill: #fff;
+  fill: #2e2f30;
   margin-right: 0.8rem;
 }
 .navigation-heading {
@@ -538,6 +558,124 @@ body {
   transition: all 0.3s;
   transform: translate(-50%, -50%);
   opacity: 1;
+}
+.part-card {
+  background-color: #1fade0;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.part-card__image {
+  height: 30rem;
+  background-color: #fff;
+  border: 0.2rem solid #1fade0;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  position: relative;
+}
+.part-card__image img {
+  width: 100%;
+  max-width: 24rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.part-card__content {
+  padding: 0.4rem 0.8rem 0.8rem;
+}
+.part-card__name {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0.2rem solid #1fade0;
+  background-color: #1fade0;
+  border-radius: 0.2rem;
+}
+.welcome-section {
+  height: 100vh;
+  max-height: 90rem;
+  background-color: #d2eff9;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/img/HomeBackgroundImage.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section__content {
+  max-width: 96.8rem;
+  text-align: center;
+}
+.welcome-section__heading {
+  font-size: 5.2rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.welcome-section__text {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.about-section__content {
+  padding: 2.8rem 0;
+  max-width: 116.8rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 3.2rem;
+}
+.about-section__image-side {
+  grid-column: 1 / span 5;
+}
+.about-section__image-side img {
+  width: 100%;
+}
+.about-section__text-side {
+  grid-column: 6 / span 7;
+}
+.parts-section {
+  background-color: #ebf2f4;
+}
+.parts-section__content {
+  max-width: 116.8rem;
+  margin: 0 auto;
+  padding: 2.8rem 0;
+}
+.parts-section__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3.2rem;
+}
+.udemy-course-section__content {
+  padding: 2.8rem 0;
+  max-width: 116.8rem;
+  margin: 0 auto;
+}
+.udemy-course-section__bottom-part {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3.2rem;
+}
+.udemy-course-section__bottom-part > div {
+  grid-row-end: span 6;
 }
 .article-page {
   max-width: 116.8rem;
