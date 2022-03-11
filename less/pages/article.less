@@ -6,6 +6,8 @@
     grid-template-columns: repeat(3, 6.8rem) repeat(9, minmax(0, 1fr));
     column-gap: @grid-gutter;
 
+    overflow-x: unset;
+
     @media (max-width: @navigation-breakpoint) {
         grid-template-columns: @side-bar-button-width repeat(12, minmax(0, 1fr));
     }
