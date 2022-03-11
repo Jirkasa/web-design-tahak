@@ -333,6 +333,12 @@ body {
   max-width: 180rem;
   background-color: #fff;
 }
+@media (min-width: 128.75em) {
+  .page {
+    margin: 2rem auto;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  }
+}
 .header {
   height: 8rem;
   background-color: #1fade0;
