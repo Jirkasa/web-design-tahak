@@ -1,6 +1,6 @@
 .welcome-section {
-    // height: ~"calc(100vh - 8rem)";
     height: 100vh;
+    min-height: 40rem;
     max-height: 90rem;
 
     background-color: @colors[primary-20];
@@ -11,6 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0 3.2rem;
 
     &__content {
         max-width: @grid-width - 6.8rem*2 - @grid-gutter*2;
@@ -38,6 +40,11 @@
 }
 
 .about-section {
+    padding: 0 3.2rem;
+
+    @media (max-width: #pxToEm(650)[]) {
+        padding: 0 2.4rem;
+    }
 
     &__content {
         padding: 2.8rem 0;
@@ -48,11 +55,23 @@
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
         column-gap: @grid-gutter;
+
+        @media (max-width: #pxToEm(1050)[]) {
+            column-gap: 0;
+        }
+
+        @media (max-width: #pxToEm(650)[]) {
+            padding: 2rem 0 2.4rem;
+        }
     }
 
     &__image-side {
         // padding: 2.8rem 0;
         grid-column: 1 / span 5;
+
+        @media (max-width: #pxToEm(1050)[]) {
+            display: none;
+        }
 
         img {
             width: 100%;
@@ -62,39 +81,79 @@
     &__text-side {
         // padding: 5.6rem 0 2.8rem;
         grid-column: 6 / span 7;
+
+        @media (max-width: #pxToEm(1050)[]) {
+            grid-column: 1 / span 12;
+        }
     }
 }
 
 .parts-section {
     background-color: @colors[bg-grey-20];
+    padding: 0 3.2rem;
+
+    @media (max-width: #pxToEm(650)[]) {
+        padding: 0 2.4rem;
+    }
 
     &__content {
         max-width: @grid-width;
         margin: 0 auto;
 
         padding: 2.8rem 0;
+
+        @media (max-width: #pxToEm(650)[]) {
+            padding: 2.8rem 0 2.4rem;
+        }
     }
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: @grid-gutter;
+
+        @media (max-width: #pxToEm(950)[]) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        @media (max-width: #pxToEm(650)[]) {
+            gap: 2.8rem;
+        }
+
+        @media (max-width: #pxToEm(560)[]) {
+            grid-template-columns: minmax(0, 1fr);
+        }
     }
 }
 
 .udemy-course-section {
+    padding: 0 3.2rem;
+
+    @media (max-width: #pxToEm(650)[]) {
+        padding: 0 2.4rem;
+    }
 
     &__content {
         padding: 2.8rem 0;
 
         max-width: @grid-width;
         margin: 0 auto;
+
+        @media (max-width: #pxToEm(650)[]) {
+            padding: 2rem 0 2.4rem;
+        }
     }
 
     &__bottom-part {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: @grid-gutter;
+
+        @media (max-width: #pxToEm(980)[]) {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+        }
 
         > div {
             grid-row-end: span 6;
