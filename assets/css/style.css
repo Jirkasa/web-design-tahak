@@ -254,6 +254,80 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+@keyframes slideInDown {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -300rem, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 2.5rem, 0);
+  }
+  75% {
+    transform: translate3d(0, -1rem, 0);
+  }
+  90% {
+    transform: translate3d(0, 0.5rem, 0);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes blinkIn {
+  0% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+}
+@keyframes scaleIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  80% {
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .page {
   margin: 0 auto;
   max-width: 180rem;
@@ -404,6 +478,9 @@ body {
 .button-primary--with-icon:visited {
   display: inline-flex;
   align-items: center;
+}
+.button-primary--animated {
+  animation: scaleIn 0.5s 0.5s ease both;
 }
 .button-primary--large:link,
 .button-primary--large:visited {
@@ -989,12 +1066,14 @@ body {
   font-weight: 700;
   color: #fff;
   margin-bottom: 4rem;
+  animation: slideInDown 1s ease both;
 }
 .welcome-section__text {
   font-size: 2rem;
   line-height: 2.8rem;
   color: #fff;
   margin-bottom: 4rem;
+  animation: blinkIn 1s ease both;
 }
 .about-section {
   padding: 0 3.2rem;
