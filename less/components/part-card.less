@@ -23,6 +23,11 @@
 
     &__content {
         padding: .4rem .8rem .8rem;
+
+        @media print {
+            border: .2rem solid @colors[primary];
+            border-top: none;
+        }
     }
 
     &__name {
@@ -33,5 +38,9 @@
         color: @colors[text-white];
 
         margin-bottom: .4rem;
+
+        @media print {
+            color: @colors[text-grey-80];
+        }
     }
 }

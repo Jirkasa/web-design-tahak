@@ -351,6 +351,11 @@ body {
     height: 6.4rem;
   }
 }
+@media print {
+  .header {
+    display: none;
+  }
+}
 .header__content {
   display: flex;
   align-items: center;
@@ -442,6 +447,11 @@ body {
   text-align: center;
   padding: 1.2rem 1.6rem;
 }
+@media print {
+  .footer {
+    display: none;
+  }
+}
 .button-primary:link,
 .button-primary:visited {
   display: inline-block;
@@ -465,6 +475,12 @@ body {
   .button-primary:link,
   .button-primary:visited {
     font-size: 2rem;
+  }
+}
+@media print {
+  .button-primary:link,
+  .button-primary:visited {
+    border: 0.2rem solid #2e2f30;
   }
 }
 .button-primary:hover,
@@ -922,6 +938,12 @@ body {
 .part-card__content {
   padding: 0.4rem 0.8rem 0.8rem;
 }
+@media print {
+  .part-card__content {
+    border: 0.2rem solid #1fade0;
+    border-top: none;
+  }
+}
 .part-card__name {
   font-size: 2.8rem;
   font-weight: 400;
@@ -929,11 +951,21 @@ body {
   color: #fff;
   margin-bottom: 0.4rem;
 }
+@media print {
+  .part-card__name {
+    color: #2e2f30;
+  }
+}
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   height: 0;
+}
+@media print {
+  .video-wrapper {
+    display: none;
+  }
 }
 .video-wrapper iframe {
   position: absolute;
@@ -1056,6 +1088,11 @@ body {
   align-items: center;
   padding: 0 3.2rem;
 }
+@media print {
+  .welcome-section {
+    break-after: page;
+  }
+}
 .welcome-section__content {
   max-width: 96.8rem;
   text-align: center;
@@ -1068,6 +1105,11 @@ body {
   margin-bottom: 4rem;
   animation: slideInDown 1s ease both;
 }
+@media print {
+  .welcome-section__heading {
+    color: #596063;
+  }
+}
 .welcome-section__text {
   font-size: 2rem;
   line-height: 2.8rem;
@@ -1075,12 +1117,22 @@ body {
   margin-bottom: 4rem;
   animation: blinkIn 1s ease both;
 }
+@media print {
+  .welcome-section__text {
+    color: #596063;
+  }
+}
 .about-section {
   padding: 0 3.2rem;
 }
 @media (max-width: 40.625em) {
   .about-section {
     padding: 0 2.4rem;
+  }
+}
+@media print {
+  .about-section {
+    break-before: page;
   }
 }
 .about-section__content {
@@ -1129,6 +1181,11 @@ body {
     padding: 0 2.4rem;
   }
 }
+@media print {
+  .parts-section {
+    break-before: page;
+  }
+}
 .parts-section__content {
   max-width: 116.8rem;
   margin: 0 auto;
@@ -1165,6 +1222,11 @@ body {
 @media (max-width: 40.625em) {
   .udemy-course-section {
     padding: 0 2.4rem;
+  }
+}
+@media print {
+  .udemy-course-section {
+    break-before: page;
   }
 }
 .udemy-course-section__content {
@@ -1210,6 +1272,11 @@ body {
     column-gap: 2rem;
   }
 }
+@media print {
+  .article-page {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
 .article-page__side-bar {
   grid-column: 1 / span 3;
   background-color: #ebf2f4;
@@ -1222,6 +1289,11 @@ body {
     padding: 0;
     z-index: 20;
     overflow-x: visible;
+  }
+}
+@media print {
+  .article-page__side-bar {
+    display: none;
   }
 }
 .article-page__content {
@@ -1242,6 +1314,11 @@ body {
 @media (max-width: 45em) {
   .article-page__content {
     padding: 1.6rem 2rem 1.6rem 0;
+  }
+}
+@media print {
+  .article-page__content {
+    grid-column: 1 / span 12;
   }
 }
 .article-page__side-illustration {

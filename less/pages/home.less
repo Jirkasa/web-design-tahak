@@ -14,6 +14,10 @@
 
     padding: 0 3.2rem;
 
+    @media print {
+        break-after: page;
+    }
+
     &__content {
         max-width: @grid-width - 6.8rem*2 - @grid-gutter*2;
         text-align: center;
@@ -29,6 +33,10 @@
         margin-bottom: 4rem;
 
         animation: slideInDown 1s ease both;
+
+        @media print {
+            color: @colors[text-grey-60];
+        }
     }
 
     &__text {
@@ -40,6 +48,10 @@
         margin-bottom: 4rem;
 
         animation: blinkIn 1s ease both;
+
+        @media print {
+            color: @colors[text-grey-60];
+        }
     }
 }
 
@@ -48,6 +60,10 @@
 
     @media (max-width: #pxToEm(650)[]) {
         padding: 0 2.4rem;
+    }
+
+    @media print {
+        break-before: page;
     }
 
     &__content {
@@ -100,6 +116,10 @@
         padding: 0 2.4rem;
     }
 
+    @media print {
+        break-before: page;
+    }
+
     &__content {
         max-width: @grid-width;
         margin: 0 auto;
@@ -135,6 +155,10 @@
 
     @media (max-width: #pxToEm(650)[]) {
         padding: 0 2.4rem;
+    }
+
+    @media print {
+        break-before: page;
     }
 
     &__content {
