@@ -32,15 +32,17 @@
 .side-bar-checkbox {
     display: none;
 
-    &:checked {
-        + div {
-            transform: translateX(0);
-        }
-        + div > .side-bar-button {
-            background-color: @colors[secondary-purple];
-
-            svg {
-                transform: translate(-50%, -50%) scaleX(-1);
+    @media (max-width: @navigation-breakpoint) {
+        &:checked {
+            + div {
+                transform: translateX(0);
+            }
+            + div > .side-bar-button {
+                background-color: @colors[secondary-purple];
+    
+                svg {
+                    transform: translate(-50%, -50%) scaleX(-1);
+                }
             }
         }
     }

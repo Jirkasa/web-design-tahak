@@ -54,19 +54,21 @@
 .header-nav-checkbox {
     display: none;
 
-    &:checked {
-        ~ .header-nav-button .header-nav-button__icon {
-            background-color: transparent;
-            &::before {
-                transform: translateY(.8rem) rotate(45deg);
+    @media (max-width: @header-nav-breakpoint) {
+        &:checked {
+            ~ .header-nav-button .header-nav-button__icon {
+                background-color: transparent;
+                &::before {
+                    transform: translateY(.8rem) rotate(45deg);
+                }
+                &::after {
+                    transform: translateY(-.8rem) rotate(-45deg);
+                }
             }
-            &::after {
-                transform: translateY(-.8rem) rotate(-45deg);
+    
+            ~ .header__navigation {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 70%, 0 30%);
             }
-        }
-
-        ~ .header__navigation {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 70%, 0 30%);
         }
     }
 }
